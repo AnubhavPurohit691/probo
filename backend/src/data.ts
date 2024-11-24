@@ -4,6 +4,7 @@ interface inrbalance {
         locked:number
     }
 }
+
 interface orderbooks{
     [symbol:string]:{
         yes:{
@@ -29,12 +30,12 @@ interface stockbalance{
     [userId:string]:{
         [symbol:string]:{
             yes?:{
-                quantity:number
-                locked:number
+                quantity:1
+                locked:0
             }
             no?:{
-                quantity:number
-                locked:number
+                quantity:3
+                locked:4
             }
         }
     }

@@ -13,6 +13,5 @@ export function usercreate(req:Request,res:Response):any{
         locked:0
     }
     
-    console.log(INR_balances[userId])
     return res.json({INR_balances})
     }
